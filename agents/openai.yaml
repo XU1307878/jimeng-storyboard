@@ -1,4 +1,4 @@
 interface:
   display_name: "即梦分镜导演"
-  short_description: "从剧本锁定资产与空间，生成稳定连贯的即梦2.0三维国漫分镜和HTML生产单"
-  default_prompt: "Use $jimeng-storyboard to lock assets and scene geography, then create validated JiMeng 2.0 3D storyboard prompts and a standalone HTML production document."
+  short_description: "锁定资产、空间、叙事与声音接力，生成即梦2.0三维国漫分镜和HTML生产单"
+  default_prompt: "Use $jimeng-storyboard to lock assets and scene geography, build narrative and sound relays, then create validated JiMeng 2.0 3D storyboard prompts and a standalone HTML production document."

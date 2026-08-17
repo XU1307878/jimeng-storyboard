@@ -9,12 +9,13 @@ Turn narrative material into compact, copy-ready JiMeng 2.0 prompts. Optimize fo
 
 ## Required references
 
-Read the first four files before drafting. Read the fifth when delivering HTML:
+Read the first five files before drafting. Read the sixth when delivering HTML:
 
 - `references/preproduction-workflow.md` for the asset, space and shot-design gates.
 - `references/style-system.md` for the locked 3D daily/Shanhai visual system.
 - `references/production-controls.md` for reference roles, camera encoding, render controls and continuity handoffs.
 - `references/output-contract.md` for timing, shot fields and delivery format.
+- `references/narrative-audio-chain.md` for information gain, entry/development/exit beats and sound continuity.
 - `references/html-delivery.md` when the user requests a production document or final package.
 
 ## Repository defaults
@@ -36,14 +37,16 @@ Read the first four files before drafting. Read the fifth when delivering HTML:
 7. Mark every beat as `D` (daily reality), `S` (Shanhai order) or `T` (explicit in-shot transition).
 8. Run Gate C — shot design. Split on changes in action, speaker, camera objective, reveal, emotional turn or world style. Prefer 3–10 seconds; never exceed 15 seconds.
 9. Give every shot one primary action, one dominant camera move, one observable micro-performance beat and one visible end state.
-10. Encode the starting camera with Z/Y/X/F shorthand. Bind the shot to the approved scene/axis IDs and carry screen direction forward.
-11. Select the minimum current-shot asset set. Reference only visible assets that control a property in this shot; do not paste the entire project asset list into every prompt.
-12. For an opening, place a visible question, anomaly, threat or emotional wound inside the first two seconds without inventing new plot.
-13. Preserve the requested runtime. Carry each shot's end state into the next shot's entry state.
-14. Write each visual prompt as `reference-role clause + applicable style prefix + spatially locked shot core + micro-performance + compact risk prevention`.
-15. Put dialogue, voice-over, sound and exact interface text outside the visual prompt.
-16. Run `scripts/validate_storyboard.py --strict-production --strict-preproduction` for a locked final. Use only `--strict-production` for backward-compatible drafts.
-17. When a final production package is requested, generate one standalone source-of-truth HTML file with `scripts/build_storyboard_html.py`. Regenerate it after revisions instead of maintaining contradictory chat versions.
+10. Build a narrative relay: state the new information contributed by each shot, then make its exit state or sound cue become the next shot's entry trigger. Remove shots that add no action, emotion, information or sound progression.
+11. Encode the starting camera with Z/Y/X/F shorthand. Bind the shot to the approved scene/axis IDs and carry screen direction forward.
+12. Select the minimum current-shot asset set. Reference only visible assets that control a property in this shot; do not paste the entire project asset list into every prompt.
+13. For an opening, place a visible question, anomaly, threat or emotional wound inside the first two seconds without inventing new plot.
+14. Preserve the requested runtime. Carry each shot's end state into the next shot's entry state.
+15. Design a three-layer sound bed for every clip: ambience, action feedback and character/voice/offscreen sound as applicable. Let at least one sound parameter change across the clip; never add random noise merely to fill a field.
+16. Write each visual prompt as `reference-role clause + applicable style prefix + spatially locked shot core + micro-performance + compact risk prevention`.
+17. Put dialogue, voice-over, sound and exact interface text outside the visual prompt.
+18. Run `scripts/validate_storyboard.py --strict-production --strict-preproduction` for a locked final. Use only `--strict-production` for backward-compatible drafts.
+19. When a final production package is requested, generate one standalone source-of-truth HTML file with `scripts/build_storyboard_html.py`. Regenerate it after revisions instead of maintaining contradictory chat versions.
 
 ## Reference rules
 
@@ -95,7 +98,7 @@ Return in this order:
 6. `统一画风前缀`
 7. `角色与道具锚点`
 8. `分镜提示词`
-9. `后期叠字与声音`
+9. `后期叠字与声音链`
 10. `校验结果`
 
 Use the exact shot format in `references/output-contract.md`.

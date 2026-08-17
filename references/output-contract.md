@@ -59,6 +59,8 @@ Use this exact format:
 
 衔接状态：入=姜禾站在桌左侧，双手托住蛋糕盒；出=蛋糕盒落桌，姜禾右手仍搭在盒盖上
 
+本镜新增：姜禾的期待第一次转为迟疑，蛋糕盒成为情绪落点
+
 微表演：主体=姜禾短吸气，视线从外婆移到蛋糕盒，右手指尖压紧盒盖，重心退到后脚；背景=外婆保持不动，只轻微抬眼
 
 模型风险：风险=目线反转、蛋糕盒换手；预防=姜禾始终向画面右侧看，双手持续接触盒体，结尾右手仍在盒盖上
@@ -68,7 +70,7 @@ Use this exact format:
 
 台词/旁白：<exact line or “无”>
 
-声音：<ambience, effects, music cue>
+声音：环境底噪=<room tone>；动作反馈=<synchronized contact sound>；人物声/画外声=<as applicable>；衔接尾巴=<sound carried into the next shot or “无”>
 
 后期叠字：<exact text or “无”>
 ```
@@ -94,6 +96,7 @@ Each `画面提示词` must answer:
 9. Which approved scene/axis and screen direction does it inherit?
 10. Which observable micro-performance carries the emotion?
 11. Which likely generation failure is actively prevented?
+12. What new action, emotion, information or sound change does this shot add?
 
 The set of @ references in `素材映射` must equal the set used in `画面提示词`. Prefer four or fewer current-shot assets.
 
@@ -109,6 +112,7 @@ The set of @ references in `素材映射` must equal the set used in `画面提�
 - Put exact UI, order, signage, title and subtitle text under `后期叠字`.
 - In the visual prompt, request blank or abstract interface blocks only.
 - Separate ambience, effects and score cues under `声音`.
+- For clips with internal time beats, describe one motivated sound progression and preserve any useful tail into the next clip.
 
 ## Validation summary
 
