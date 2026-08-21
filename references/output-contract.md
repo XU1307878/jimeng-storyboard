@@ -1,5 +1,21 @@
 # Output contract
 
+This is the expanded engineering-card format. It is no longer the default user-facing layout. Use `reference-shot-format.md` by default and use this contract only for strict production validation, explicit asset-role audits or when the user requests the engineering format.
+
+## Default production mode
+
+Deliver a lightweight director document by default:
+
+- analyze the script and use only character facts supplied by the script, user or references; do not invent appearance anchors or create character, prop or scene images;
+- write spatial and axis locks in text, but do not render maps or diagrams;
+- design narrative shots, then split them into independently generatable clips of 15 seconds or less;
+- lock the first and last visible states for every generated clip;
+- write copy-ready prompts and check character, lighting, prop, spatial and sound continuity;
+- save as editable UTF-8 Markdown or TXT. Use DOCX when the user requests Word delivery;
+- create HTML or visual assets only after an explicit request.
+
+A user-requested 15–30 second prompt is a production segment containing multiple short shots. Preserve that segment in the document; when the generator limit is 15 seconds, mark two or more sealed clip groups without changing the internal shot structure.
+
 ## Timing
 
 - Hard maximum: 15 seconds per shot.
@@ -29,9 +45,11 @@ For a provisional draft, mark the production state in `制作摘要` and each un
 
 `场次事实表` must identify stable scene IDs and distinguish script facts from assumptions.
 
-`资产请求与状态` must classify each production asset as `已提供`, `需要生成`, `文本锚定`, `冲突待确认` or `不适用`.
+`资产请求与状态` must classify each production asset as `已提供`, `文本锚定`, `建议后续制作`, `冲突待确认` or `不适用`. `建议后续制作` is informational and does not authorize generating the asset.
 
 `空间锁定` must include `状态：已确认` or `状态：草案`. For blocking-sensitive scenes, include scene ID, axis ID, positions, facing/eyeline, prop positions and permitted screen direction. Use `不适用` only for a genuinely simple insert.
+
+Keep these two sections concise. They exist to support prompt continuity rather than become separate asset-design or visualization deliverables.
 
 ## Asset map format
 
@@ -56,6 +74,8 @@ Use this exact format:
 镜头编码：Z4 / Y4 / X2 / F50mm；运动：缓慢推近
 
 场景锁定：SC01 / AX-A / 状态=已确认；人物=姜禾L1面向右，外婆R2面向左；目线=姜禾→外婆；道具=蛋糕盒在姜禾双手；运动=姜禾左→右
+
+首帧锁定：前景=桌角轻微虚化；中景=姜禾位于画面左侧，双手托盒；背景=外婆位于画面右后方；主光=画面左后方窗光；首帧已有姜禾呼吸和发梢微动
 
 衔接状态：入=姜禾站在桌左侧，双手托住蛋糕盒；出=蛋糕盒落桌，姜禾右手仍搭在盒盖上
 
@@ -97,6 +117,8 @@ Each `画面提示词` must answer:
 10. Which observable micro-performance carries the emotion?
 11. Which likely generation failure is actively prevented?
 12. What new action, emotion, information or sound change does this shot add?
+13. Is the first frame already populated, spatially measurable and lit from a stated source?
+14. Can this prompt execute independently without relying on “同上” or model memory?
 
 The set of @ references in `素材映射` must equal the set used in `画面提示词`. Prefer four or fewer current-shot assets.
 

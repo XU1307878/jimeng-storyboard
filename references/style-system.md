@@ -1,5 +1,7 @@
 # 3D visual style system
 
+This is an opt-in project style library. Do not apply any preset merely because the task is an AI-video storyboard. Use it only when the user explicitly requests 3D, the daily/Shanhai system or one of these presets. Otherwise preserve the supplied style; if none is supplied, leave the medium and rendering technology unspecified.
+
 ## D — 日常世界：3D冷写实
 
 默认前缀：

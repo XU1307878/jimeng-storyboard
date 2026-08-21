@@ -1,4 +1,4 @@
 interface:
   display_name: "即梦分镜导演"
-  short_description: "锁定资产、空间、叙事与声音接力，生成即梦2.0三维国漫分镜和HTML生产单"
-  default_prompt: "Use $jimeng-storyboard to lock assets and scene geography, build narrative and sound relays, then create validated JiMeng 2.0 3D storyboard prompts and a standalone HTML production document."
+  short_description: "导演式拆解剧本，按画面/机位/镜头/视线/光影/衔接/台词/声音输出15–30秒段落"
+  default_prompt: "Use $jimeng-storyboard in lightweight director mode. Do not invent character appearance, visual medium, style, rendering engine, aspect ratio, or frame rate. Organize the story into 15–30 second production segments and write each internal shot using the reference layout: 画面, 机位, 镜头, 视线, 光影·大气, 衔接, 台词, 声音. Mark sealed sub-15-second generation groups only when the target model requires them, validate continuity, and deliver Markdown, TXT, or requested DOCX."

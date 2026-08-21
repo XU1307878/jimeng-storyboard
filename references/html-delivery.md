@@ -1,6 +1,6 @@
 # Standalone HTML delivery
 
-Use a standalone HTML file when the user requests a final production package, a browsable storyboard, a handoff document or a single authoritative version.
+Use a standalone HTML file only when the user explicitly requests HTML, a webpage or a browsable storyboard. A generic request for a production package defaults to Markdown/TXT or DOCX and does not trigger HTML generation.
 
 ## Build
 
