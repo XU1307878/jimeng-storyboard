@@ -38,6 +38,9 @@ Then write:
 画面：
 <景别与构图。按时间顺序写主体动作、微动作、环境反馈和落幅；需要精确节奏时标注第几秒。>
 
+表演：
+动作=<可见身体行为、接触关系与动作结果>；表情=<观众直接读到的主要情绪或社会性伪装>；微表情=<二至四个眼神、眉间、嘴角、下颌、呼吸或手指压力信号>。
+
 机位：
 <高度及选择理由> | 类型 = <正面/侧面/3/4/俯拍/仰拍等> | 轴线侧 = <A侧/B侧/中性/无>
 
@@ -76,6 +79,14 @@ Use the field names and order exactly unless the user supplies a newer reference
 - Write the action as a visible sequence with one primary action per shot.
 - Include two to four decisive performance cues, not a catalogue of micro-actions.
 - State relevant physical feedback: cloth drag, hair lag, foot contact, prop weight, rain, fog or dust.
+
+### 表演三层
+
+- `动作`回答人物实际做了什么，并写明起点、接触和可继承的结束状态。
+- `表情`回答观众第一眼读到的主要情绪；悬疑或欺骗场景允许写社会性伪装。
+- `微表情`用二至四个可观察信号揭示强度、转折或潜台词，不堆满所有面部和身体细节。
+- 当外在表情与真实意图冲突时明确写出对照，例如：`表情=故作关切；微表情=回答前视线短暂避开、下颌瞬间收紧`。
+- 背景人物同样遵守三层逻辑，但动作幅度和微表情密度必须低于主体。
 
 ### 机位与镜头
 

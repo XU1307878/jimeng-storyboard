@@ -18,6 +18,7 @@ Read the first six files before drafting. Read the seventh for precision cinemat
 - `references/narrative-audio-chain.md` for information gain, entry/development/exit beats and sound continuity.
 - `references/reference-shot-format.md` for the user's default 15–30 second production-segment layout and exact per-shot fields.
 - `references/precision-shot-control.md` when a shot needs FOV control, internal cuts, layered depth, optical effects or local-canvas sealed prompts.
+- `references/director-language-library.md` when designing dramatic shot progression, focus changes, ensemble composition, action spectacle, lighting strategy or visible injury continuity.
 - `references/html-delivery.md` when the user requests a production document or final package.
 
 ## Repository defaults
@@ -43,6 +44,7 @@ Read the first six files before drafting. Read the seventh for precision cinemat
 7. Mark every beat as `D` (daily reality), `S` (Shanhai order) or `T` (explicit in-shot transition).
 8. Run Gate C — shot design. Organize the story into 15–30 second production segments, then split each segment on changes in action, speaker, camera objective, reveal, emotional turn or world style. Individual internal shots are commonly 1.5–8 seconds. If the target generator accepts no more than 15 seconds, divide the segment into sealed generation clips of 15 seconds or less without changing the requested segment structure.
 9. Give every shot one primary action, one dominant camera move, one observable micro-performance beat and one visible end state.
+9a. Design camera language from the scene's dramatic task. Use a motivated progression such as environment/context → blocking/action → reaction/emotional decision → decisive detail, but omit any rung that adds no new story information. Never force a generic five-shot ladder onto every scene.
 10. Build a narrative relay: state the new information contributed by each shot, then make its exit state or sound cue become the next shot's entry trigger. Remove shots that add no action, emotion, information or sound progression.
 11. Encode the starting camera with Z/Y/X/F shorthand. Bind the shot to the approved scene/axis IDs and carry screen direction forward.
 12. Treat every generated clip as a sealed document with no model memory. Restate the minimum visible facts sourced from the script or references, plus geometry, prop, light and entry state; never rely on “同上” or “延续上一镜” alone and never invent appearance anchors to fill gaps.
@@ -78,6 +80,7 @@ Read the first six files before drafting. Read the seventh for precision cinemat
 
 ## Performance rules
 
+- Encode every visible character performance in three layers: `动作` (body behavior, contact and end state), `表情` (the readable primary emotion or social mask), and `微表情` (two to four decisive cues from gaze, eyelids, brows, mouth, jaw, breath or hand pressure). Keep the three layers mutually consistent unless the script requires a deliberate contrast between outward expression and hidden intent.
 - Translate emotion into visible evidence: gaze target and break, eyelid tension, mouth or jaw change, breath rhythm, hand pressure, shoulder state, posture and weight transfer.
 - Use two layers when background characters are visible: foreground subject performance and restrained background response.
 - Select two to four decisive cues. Do not stack every facial and body cue into every shot.
