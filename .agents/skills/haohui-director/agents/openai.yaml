@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉短剧导演"
+  short_description: "研读剧本并按题材选择导演语言，完成分镜设计与视频模型分流"
+  default_prompt: "使用 $haohui-director 研读这个剧本，确定题材、节奏、表演和分镜方案。"
+policy:
+  allow_implicit_invocation: true
