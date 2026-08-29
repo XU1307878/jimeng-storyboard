@@ -11,6 +11,10 @@ Use this as the default user-facing prompt structure. It mirrors the supplied re
 - When the target generator has a 15-second limit, group the numbered shots into two or more sealed generation clips of 15 seconds or less. Preserve the same shot numbering and clearly mark the clip boundary.
 - Do not stretch one uninterrupted camera move to 30 seconds merely to satisfy the segment duration.
 
+## Spatial confirmation before the segment
+
+For multi-character blocking, fixed seating or a supplied scene image containing people, do not invent screen-left/right placement. Ask whether the reference placement is locked, or provide a pure-text overhead map marked `待确认`. Write final axis and position language only after confirmation. The map must preserve the depth chain from background to camera and keep fixed furniture in the correct layer.
+
 ## Opening material line
 
 Only list assets the user actually supplied or explicitly mapped:
@@ -39,6 +43,7 @@ Then write:
 <景别与构图。按时间顺序写主体动作、微动作、环境反馈和落幅；需要精确节奏时标注第几秒。>
 
 表演：
+触发=<本镜可见事件、画外声音、对方动作或上一镜遗留状态>；目标=<人物此刻想让什么发生；用于导演控制，不写成长篇解释>；
 动作=<可见身体行为、接触关系与动作结果>；表情=<观众直接读到的主要情绪或社会性伪装>；微表情=<二至四个眼神、眉间、嘴角、下颌、呼吸或手指压力信号>。
 
 机位：
@@ -52,8 +57,9 @@ Then write:
 <脸部角度> | 眼神落点 = <具体人物、道具或空间位置> | 留白侧 = <方向及叙事用途>
 
 光影·大气：
-主光 = <来源、方向、软硬、色温>
+主光 = <物理来源、画面方向、高度、软硬、色温>
 明暗分区 = <主体和环境的受光/阴影关系>
+光比与衰减 = <面部可读性、阴影深度、背景分离；只写可见结果>
 色板 = <只在有价值时给关键颜色或HEX；颜色绑定材质、光源和叙事作用>
 粒子 = <类型 × 密度 × 运动反馈，或“无”>
 介质 = <雾、雨、尘、烟、黑暗或“无”>
@@ -82,10 +88,13 @@ Use the field names and order exactly unless the user supplies a newer reference
 
 ### 表演三层
 
+- 先从剧本确定 `触发 → 判断 → 目标 → 策略`，再写动作、表情和微表情。情绪名称不能独立驱动表演。
+- `触发`只写本镜能看到、听到或从上一镜直接继承的证据；纯心理原因留在导演分析，不让模型把解释性名词生成进画面。
 - `动作`回答人物实际做了什么，并写明起点、接触和可继承的结束状态。
 - `表情`回答观众第一眼读到的主要情绪；悬疑或欺骗场景允许写社会性伪装。
 - `微表情`用二至四个可观察信号揭示强度、转折或潜台词，不堆满所有面部和身体细节。
 - 当外在表情与真实意图冲突时明确写出对照，例如：`表情=故作关切；微表情=回答前视线短暂避开、下颌瞬间收紧`。
+- 情绪变化写成顺序：基线状态 → 触发 → 半拍处理 → 外泄或压制 → 镜尾残留。除非剧情要求爆发，不让所有面部信号在同一帧同时出现。
 - 背景人物同样遵守三层逻辑，但动作幅度和微表情密度必须低于主体。
 
 ### 机位与镜头
@@ -104,7 +113,9 @@ Use the field names and order exactly unless the user supplies a newer reference
 ### 光影·大气
 
 - Keep key-light origin and white balance stable within a scene unless a scripted light event changes them.
+- A reverse angle changes the camera, not the light source. Preserve key side, height, softness, face exposure and shadow direction across coverage.
 - Describe a light change with timing and physical cause. Avoid unexplained exposure or color jumps.
+- Do not use `电影感`, `氛围感` or `低调光` as substitutes for a motivated source and visible subject/background effect.
 - Do not require particles or a color code when the scene does not need them.
 
 ### 衔接
@@ -117,6 +128,7 @@ Use the field names and order exactly unless the user supplies a newer reference
 
 - Preserve the script's exact dialogue; do not rewrite it for convenience.
 - Distinguish dialogue, voice-over and offscreen speech.
+- For spoken lines, specify intention plus only the useful voice controls: breath, volume, rate, pitch contour, pause and articulation. Keep them consistent with the visible performance or state the deliberate mask.
 - Synchronize action sounds to visible contact.
 - Carry a useful ambience, music phrase or sound tail across cuts.
 

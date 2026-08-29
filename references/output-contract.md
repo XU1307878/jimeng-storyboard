@@ -124,7 +124,7 @@ The set of @ references in `素材映射` must equal the set used in `画面提�
 
 ## Prompt size
 
-- Target 300–900 Unicode characters per visual prompt.
+- Target about 500 Chinese characters for the model-execution visual payload; treat about 600 as a soft diagnostic line, not a hard platform limit. If essential control still does not fit after deduplication, split the generation clip.
 - Hard maximum 1,900 characters, measured with Python `len()` after trimming leading/trailing whitespace.
 - Keep negative constraints short and shot-specific.
 
@@ -141,7 +141,7 @@ The set of @ references in `素材映射` must equal the set used in `画面提�
 End with:
 
 ```markdown
-校验结果：共 <N> 镜，总时长 <M> 秒；最长镜头 <X> 秒；最长画面提示词 <Y> 字符；超出15秒镜头 0；超出1900字符提示词 0；运镜冲突 0；资产引用不一致 0；空间锁定缺失 0；微表演缺失 0；模型风险缺失 0；时间线无空档、无重叠。
+校验结果：共 <N> 镜，总时长 <M> 秒；最长镜头 <X> 秒；最长视觉载荷 <Y> 字符；超过约600字符软诊断线 <N> 条（均已精简/说明拆片）；超出1900字符传输护栏 0；运镜冲突 0；资产引用不一致 0；空间锁定缺失 0；微表演缺失 0；模型风险缺失 0；时间线无空档、无重叠。
 ```
 
 If total runtime is estimated rather than supplied, label it as an estimate.
