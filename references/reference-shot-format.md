@@ -15,6 +15,8 @@ Use this as the default user-facing prompt structure. It mirrors the supplied re
 
 For multi-character blocking, fixed seating or a supplied scene image containing people, do not invent screen-left/right placement. Ask whether the reference placement is locked, or provide a pure-text overhead map marked `待确认`. Write final axis and position language only after confirmation. The map must preserve the depth chain from background to camera and keep fixed furniture in the correct layer.
 
+When entrance timing or hidden presence matters, add a compact gate before the segment: `本镜允许出镜 / 延后入镜 / 仅画外声`. Do not reveal a delayed entrant in the background, reflection or blur before the scripted trigger. For movement, record `起点 / 路径 / 作用点 / 终点` and preserve that corridor under the requested aspect ratio.
+
 ## Opening material line
 
 Only list assets the user actually supplied or explicitly mapped:
@@ -80,8 +82,8 @@ Use the field names and order exactly unless the user supplies a newer reference
 
 ### 画面
 
-- Start with shot size and composition: centered, offset, symmetrical, rule of thirds or foreground obstruction.
-- Put the character at a measurable position such as camera-left 2/5 or center-right.
+- After any reference-role clause, start the current-shot payload with its necessary observation anchor: camera position/height, shot size, view direction and composition. Then write the subject's starting state and visible action path.
+- After blocking is confirmed, inherit its measurable position. Before confirmation, use only a provisional relationship to a verifiable landmark; do not invent exact screen-left/right placement in a final copy-ready prompt.
 - Write the action as a visible sequence with one primary action per shot.
 - Include two to four decisive performance cues, not a catalogue of micro-actions.
 - State relevant physical feedback: cloth drag, hair lag, foot contact, prop weight, rain, fog or dust.
@@ -100,6 +102,7 @@ Use the field names and order exactly unless the user supplies a newer reference
 ### 机位与镜头
 
 - Give a short narrative reason for camera height, framing and movement.
+- Convert the confirmed world-space route into this shot's visible screen direction only after the camera position and facing are known. Screen-left/right is a per-shot observation result, not a replacement for the locked overhead map.
 - Keep the camera on the declared axis side; use a neutral shot or visible crossing before changing sides.
 - Use one focal length and one dominant move.
 - `起幅` is the actual first-frame lock and `落幅` is the actual last-frame lock; a separate lock section is unnecessary.
@@ -121,6 +124,7 @@ Use the field names and order exactly unless the user supplies a newer reference
 ### 衔接
 
 - Make the prior shot's last pose, movement, gaze, prop state or sound become the current shot's entry trigger.
+- When the next shot contains movement or an entrance, use the outgoing action, gaze, sound or deliberate negative space to prepare it; the next shot must inherit the actual endpoint rather than restart the blocking.
 - Name hard cut, match cut, insert, reverse, occlusion or continuous movement when useful.
 - If a cut changes scale, explain the preserved spatial or action relationship.
 

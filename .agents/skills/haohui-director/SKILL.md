@@ -5,16 +5,21 @@ description: Analyze Chinese short-drama scripts, select a genre-specific direct
 
 # Haohui Short-Drama Director
 
+中文名称：**浩辉短剧导演**。用户可以直接说“用浩辉短剧导演研读这个剧本”。内部调用标识仍为 `$haohui-director`。
+
 Use the imported 24-module library as a selective directing reference, not as 24 simultaneous system prompts. Direct the script first; let the explicitly chosen generation platform control final prompt syntax, duration and reference mechanics.
 
 ## Required reading
 
 1. Read [references/routing-matrix.md](references/routing-matrix.md) to select one primary mode and, only when helpful, one accent mode.
 2. Read [references/director-core.md](references/director-core.md) for the shared dramaturgy, shot, performance and continuity workflow.
-3. Read only the selected genre reference:
+3. Read [references/audience-platform-rhythm.md](references/audience-platform-rhythm.md) when the audience orientation, opening retention, episode rhythm or male/female/general-audience treatment affects the directing decision.
+4. Read [references/camera-action-physics.md](references/camera-action-physics.md) only for pursuit, combat, forceful action, complex movement or a request to strengthen camera language.
+5. Read [references/spatial-blocking-relay.md](references/spatial-blocking-relay.md) for multi-character dialogue, fixed seating, entrances/exits, cross-shot movement or a shot that must reserve space for later action.
+6. Read only the selected genre reference:
    - [references/genre-realistic-drama.md](references/genre-realistic-drama.md) for romance, workplace, life, rebirth, revenge, melodrama, family power, science fiction or suspense.
    - [references/genre-animation-spectacle.md](references/genre-animation-spectacle.md) for xianxia combat, poetic ink CG, grounded wuxia, 3D comedy, mythic epic, medieval underworld fantasy or black-gold CG.
-4. Read [references/platform-handoff.md](references/platform-handoff.md) only when the user requests production prompts or names a video model.
+7. Read [references/platform-handoff.md](references/platform-handoff.md) only when the user requests production prompts or names a video model.
 
 ## Non-negotiable boundaries
 
@@ -33,13 +38,16 @@ When given a script:
 
 1. Read the complete requested episode or bounded scene.
 2. Identify the dramatic question, audience knowledge, conflict, reversal, emotional turn, hook opportunity and ending obligation.
-3. Select the primary genre mode from the routing matrix. Add one accent mode only when it solves a distinct secondary need.
-4. Lock characters, locations, critical props, time of day, motivated light sources, scene geography, screen direction and eyelines in text. Make the smallest script-consistent assumption for missing details and label it provisional.
-5. Design shots by information gain and emotional causality, not by a fixed five-shot ladder. Every retained shot must change action, emotion, information, spatial understanding or sound.
-6. Give each visible performance three compatible layers: action, readable expression and two to four decisive micro-expression cues. Tie the change to a visible or audible trigger.
-7. Carry the outgoing body pose, gaze, prop contact, light state and sound cue into the next shot's entry state.
-8. If the user requested a model-specific prompt, hand the director plan to the correct adapter under the rules in `platform-handoff.md`. Otherwise stop at an editable director treatment or storyboard plan.
-9. Run a final check for plot fidelity, axis, eyeline, identity, props, lighting, sound, action physics, timing and medium consistency.
+3. Classify the audience orientation and narrative engine from evidence, not from the protagonist's gender. Record primary audience, secondary audience, identification route, payoff mechanism and confidence when the distinction affects treatment.
+4. Select the primary genre mode from the routing matrix. Add one accent mode only when it solves a distinct secondary need.
+5. Establish or inherit a platform rhythm profile when the work is retention-driven. State the first 3-second, 15-second and 30-second tasks without forcing every story into the same speed.
+6. Lock characters, locations, critical props, time of day, motivated light sources, scene geography, screen direction and eyelines in text. For blocking-sensitive scenes, confirm whether reference-image placement is binding; also identify allowed visible cast, delayed entrants and offscreen voices. Make the smallest script-consistent assumption for missing details and label it provisional.
+7. Design shots by information gain and emotional causality, not by a fixed five-shot ladder. Every retained shot must change action, emotion, information, spatial understanding or sound.
+8. Give each visible performance three compatible layers: action, readable expression and two to four decisive micro-expression cues. Tie the change to a visible or audible trigger.
+9. For forceful action, design the visible chain `起势 → 接触点/作用点 → 受力结果 → 反应/恢复 → 镜尾状态`; choose camera behavior only after the action geometry is clear.
+10. Carry the outgoing body pose, gaze, prop contact, light state and sound cue into the next shot's entry state. For movement, preserve `start → route → interaction point → endpoint`, and reserve enough frame space for the next meaningful action without revealing delayed entrants early.
+11. If the user requested a model-specific prompt, hand the director plan to the correct adapter under the rules in `platform-handoff.md`. Otherwise stop at an editable director treatment or storyboard plan.
+12. Run a final check for plot fidelity, axis, eyeline, identity, props, lighting, sound, action physics, timing and medium consistency.
 
 ## Delivery
 
@@ -47,11 +55,12 @@ Match the user's requested scope. If they ask for only the opening or first shot
 
 1. `导演研读`
 2. `题材路由与选择理由`
-3. `场次事实表`
-4. `文字资产锁定`
-5. `空间与轴线锁定`
-6. `剧情分镜与节奏`
-7. `连续性风险`
-8. `平台交接说明`
+3. `受众方向与平台节奏`（仅在影响创作时）
+4. `场次事实表`
+5. `文字资产锁定`
+6. `空间与轴线锁定`
+7. `剧情分镜与节奏`
+8. `连续性风险`
+9. `平台交接说明`
 
 Default to editable Markdown or TXT. Produce DOCX only when requested. Do not render images, HTML or other assets unless explicitly requested.
