@@ -14,6 +14,8 @@ Before choosing shots, establish:
 
 Do not confuse atmosphere with story progress. A shot earns its place by adding action, emotion, information, spatial understanding or a sound transition.
 
+Before choosing a visible convention, name its dramatic job. Translate that job into one dominant channel—space, composition, shape, editing, time or sound—and use the least elaborate device that makes the change legible. A convention is not justified merely because it looks cinematic.
+
 ## Opening design
 
 For short-form work, place a visible question, anomaly, threat, contradiction or emotional wound as early as the source permits. Choose among:
@@ -49,6 +51,8 @@ Choose the smallest useful progression. Possible functions include:
 5. consequence, release or hook.
 
 This is a menu, not a mandatory five-shot sequence. Compress, reorder or omit functions based on the script. Use one dominant camera behavior per shot and define its motivation, starting frame, trigger, path, maintained relation and ending frame.
+
+When a beat can be carried without dialogue, prefer visible or audible evidence: a changed spatial distance, broken composition, redirected gaze, prop state, sound reaction, time cue or meaningful juxtaposition. Do not remove dialogue mechanically; preserve it when it carries information or character voice that the image cannot replace.
 
 ## Three-layer performance
 
@@ -107,6 +111,7 @@ Split or redesign any shot whose end state cannot plausibly become the next shot
 ## Quality check
 
 - The shot language expresses this script rather than a generic genre trailer.
+- Every conspicuous convention has a stated dramatic job and a visible or audible payoff.
 - Every emotional reaction has a prior trigger.
 - Camera movement has one narrative purpose and does not conflict with blocking.
 - The 180-degree axis and eyelines are preserved or deliberately re-established.

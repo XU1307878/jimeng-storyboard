@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉剧本会诊"
+  short_description: "依据具体剧本证据诊断结构、人物、节奏、钩子与平台适配问题"
+  default_prompt: "使用 $haohui-script-doctor 会诊这份剧本，指出有证据的问题与修改优先级。"
+policy:
+  allow_implicit_invocation: true

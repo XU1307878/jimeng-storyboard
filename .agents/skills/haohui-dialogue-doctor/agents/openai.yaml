@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉台词诊断"
+  short_description: "诊断角色语言指纹、潜台词、冲突推进、自然语速和表演可执行性"
+  default_prompt: "使用 $haohui-dialogue-doctor 诊断这段台词，保留剧情并给出修改理由。"
+policy:
+  allow_implicit_invocation: true

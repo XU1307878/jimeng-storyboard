@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉生产资产台账"
+  short_description: "建立角色、场景、道具、空间、首帧、素材编号和连续性文字契约"
+  default_prompt: "使用 $haohui-production-bible 为这个剧本建立轻量生产资产台账。"
+policy:
+  allow_implicit_invocation: true

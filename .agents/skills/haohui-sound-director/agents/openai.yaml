@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉后期声音导演"
+  short_description: "根据剧本、分镜或粗剪设计音乐、音效、静默点、声音桥与混音策略"
+  default_prompt: "使用 $haohui-sound-director 为这版分镜或粗剪设计后期声音方案。"
+policy:
+  allow_implicit_invocation: true

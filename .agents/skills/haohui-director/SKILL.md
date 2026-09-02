@@ -16,10 +16,12 @@ Use the imported 24-module library as a selective directing reference, not as 24
 3. Read [references/audience-platform-rhythm.md](references/audience-platform-rhythm.md) when the audience orientation, opening retention, episode rhythm or male/female/general-audience treatment affects the directing decision.
 4. Read [references/camera-action-physics.md](references/camera-action-physics.md) only for pursuit, combat, forceful action, complex movement or a request to strengthen camera language.
 5. Read [references/spatial-blocking-relay.md](references/spatial-blocking-relay.md) for multi-character dialogue, fixed seating, entrances/exits, cross-shot movement or a shot that must reserve space for later action.
-6. Read only the selected genre reference:
+6. Read [references/cinematic-storytelling-1-51.md](references/cinematic-storytelling-1-51.md) when converting exposition or emotion into visible action, choosing composition/editing/time/sound grammar, or designing a motivated transition. Use it as a decision library, not a checklist.
+7. Read [references/three-system-production-loop.md](references/three-system-production-loop.md) when the user requests a complete AI-film workflow, reusable asset states, production-grade prompt review, result diagnosis, retry planning or iterative shot repair.
+8. Read only the selected genre reference:
    - [references/genre-realistic-drama.md](references/genre-realistic-drama.md) for romance, workplace, life, rebirth, revenge, melodrama, family power, science fiction or suspense.
    - [references/genre-animation-spectacle.md](references/genre-animation-spectacle.md) for xianxia combat, poetic ink CG, grounded wuxia, 3D comedy, mythic epic, medieval underworld fantasy or black-gold CG.
-7. Read [references/platform-handoff.md](references/platform-handoff.md) only when the user requests production prompts or names a video model.
+9. Read [references/platform-handoff.md](references/platform-handoff.md) only when the user requests production prompts or names a video model.
 
 ## Non-negotiable boundaries
 
@@ -43,11 +45,13 @@ When given a script:
 5. Establish or inherit a platform rhythm profile when the work is retention-driven. State the first 3-second, 15-second and 30-second tasks without forcing every story into the same speed.
 6. Lock characters, locations, critical props, time of day, motivated light sources, scene geography, screen direction and eyelines in text. For blocking-sensitive scenes, confirm whether reference-image placement is binding; also identify allowed visible cast, delayed entrants and offscreen voices. Make the smallest script-consistent assumption for missing details and label it provisional.
 7. Design shots by information gain and emotional causality, not by a fixed five-shot ladder. Every retained shot must change action, emotion, information, spatial understanding or sound.
-8. Give each visible performance three compatible layers: action, readable expression and two to four decisive micro-expression cues. Tie the change to a visible or audible trigger.
-9. For forceful action, design the visible chain `起势 → 接触点/作用点 → 受力结果 → 反应/恢复 → 镜尾状态`; choose camera behavior only after the action geometry is clear.
-10. Carry the outgoing body pose, gaze, prop contact, light state and sound cue into the next shot's entry state. For movement, preserve `start → route → interaction point → endpoint`, and reserve enough frame space for the next meaningful action without revealing delayed entrants early.
-11. If the user requested a model-specific prompt, hand the director plan to the correct adapter under the rules in `platform-handoff.md`. Otherwise stop at an editable director treatment or storyboard plan.
-12. Run a final check for plot fidelity, axis, eyeline, identity, props, lighting, sound, action physics, timing and medium consistency.
+8. Before selecting a conspicuous convention, state its dramatic job in one phrase. Choose the least elaborate spatial, compositional, editing, temporal or sound device that makes that job visible; omit the device if dialogue and performance already carry the beat.
+9. Give each visible performance three compatible layers: action, readable expression and two to four decisive micro-expression cues. Tie the change to a visible or audible trigger.
+10. For forceful action, design the visible chain `起势 → 接触点/作用点 → 受力结果 → 反应/恢复 → 镜尾状态`; choose camera behavior only after the action geometry is clear.
+11. Carry the outgoing body pose, gaze, prop contact, light state and sound cue into the next shot's entry state. For movement, preserve `start → route → interaction point → endpoint`, and reserve enough frame space for the next meaningful action without revealing delayed entrants early.
+12. If the user requested a model-specific prompt, hand the director plan to the correct adapter under the rules in `platform-handoff.md`. Otherwise stop at an editable director treatment or storyboard plan.
+13. Run a final check for plot fidelity, axis, eyeline, identity, props, lighting, sound, action physics, timing and medium consistency.
+14. When revising a generated failure, preserve every verified successful layer, classify the visible failure, change one main variable and define one observable acceptance point. Split an overloaded shot instead of rewriting unrelated successful controls.
 
 ## Delivery
 
