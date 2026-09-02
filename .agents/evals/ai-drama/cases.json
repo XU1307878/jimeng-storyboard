@@ -1,0 +1,74 @@
+[
+  {
+    "id": "female-ensemble-dinner-16x9",
+    "title": "女频多人餐桌冲突",
+    "route": ["haohui-director", "haohui-production-bible", "jimeng-storyboard"],
+    "request": "把家庭晚宴争执设计成16:9女频3D动漫分镜，时长按剧情决定。",
+    "fixture": "六人围桌，女主拒绝父亲资助，哥哥讥讽，男主替女主说话，哥哥推碗离席，父亲生硬道歉。",
+    "expected_invariants": ["先确认座位或标记待确认", "不凭空改变人物数量", "说话人和反应层级明确", "推碗与离席具有镜尾接力", "不强制固定五镜"],
+    "forbidden": ["椅子出现在人物身体中间", "未确认即写死画左画右", "所有人同时夸张表演"]
+  },
+  {
+    "id": "hospital-reference-blocking",
+    "title": "医院参考图站位与轴线",
+    "route": ["haohui-production-bible", "haohui-director", "jimeng-storyboard"],
+    "request": "按照医院候诊区参考图和人物标注写分镜，不是在诊室。",
+    "fixture": "傅荆州与阮雨位于候诊椅前，沈念禾位于画面前景背对镜头；固定门、信息屏和候诊椅不得移动。",
+    "expected_invariants": ["场景识别为候诊区", "参考图优先于通用模板", "固定家具不进入人物层", "反打只改变观察角度", "未知摄影区不擅自补全"],
+    "forbidden": ["改成诊室", "移动门或候诊椅", "为了轴线重新排列人物"]
+  },
+  {
+    "id": "two-person-subtext-dialogue",
+    "title": "双人克制情感对白",
+    "route": ["haohui-dialogue-doctor", "haohui-director", "jimeng-storyboard"],
+    "request": "保留原台词，为久别重逢的双人对话设计动作、表情和微表情。",
+    "fixture": "甲说‘你还好吗’，乙回答‘挺好的’，两人都知道这不是实话。",
+    "expected_invariants": ["不改原台词", "表面语气与真实泄漏区分", "微表情按先后发生", "动作服务潜台词", "镜尾保留未完成情绪"],
+    "forbidden": ["只写悲伤地说", "五官同时夸张", "新增解释性对白"]
+  },
+  {
+    "id": "xianxia-sword-combat",
+    "title": "仙侠长剑对打",
+    "route": ["haohui-director", "jimeng-storyboard"],
+    "request": "把学院比试改成长剑对打，突出见招拆招和胜负过程。",
+    "fixture": "女主先守后攻，侧身避开连刺，找准持剑手破绽，一剑击落对手长剑，教习宣布胜负。",
+    "expected_invariants": ["使用长剑而非木剑", "动作具有起势接触受力结果", "交代距离和路线", "胜负清楚", "特效不遮挡剑路"],
+    "forbidden": ["无接触击飞", "招式堆砌无攻防因果", "摄影机穿过人物或武器"]
+  },
+  {
+    "id": "suspense-family-password",
+    "title": "儿童安全暗号悬疑",
+    "route": ["haohui-script-doctor", "haohui-director", "jimeng-storyboard"],
+    "request": "设计80至100秒防拐悬疑短剧，保留家庭暗号和向保安求助的安全点。",
+    "fixture": "陌生人知道女孩姓名与母亲信息，女孩询问家庭暗号，对方答不出，女孩跑向保安亭求助。",
+    "expected_invariants": ["前段快速建立可信威胁", "不展示可模仿的详细作案教程", "安全行为清楚可执行", "反转由暗号触发", "结尾不削弱警方核实"],
+    "forbidden": ["美化诱拐者", "增加具体规避监控方法", "让儿童独自追赶嫌疑人"]
+  },
+  {
+    "id": "vertical-retention-drama",
+    "title": "竖屏高留存短剧",
+    "route": ["haohui-script-doctor", "haohui-director", "jimeng-storyboard"],
+    "request": "为9:16短剧设计前30秒，不改变剧情但强化开头留存。",
+    "fixture": "女主收到一条足以改变婚姻关系的信息，丈夫正从门外走近。",
+    "expected_invariants": ["重要脸与道具位于竖屏安全区", "前两秒出现可见问题", "信息展示可读但不依赖生成小字", "丈夫延后入场", "节奏紧但不机械切镜"],
+    "forbidden": ["照搬横屏左右构图", "丈夫提前作为背景出现", "无意义快速变焦"]
+  },
+  {
+    "id": "horizontal-female-trailer",
+    "title": "横屏女频奇幻预告",
+    "route": ["haohui-director", "haohui-production-bible", "jimeng-storyboard"],
+    "request": "将奇幻爱情预告扩展至90秒，16:9真人女频，每30秒包含多个有动机转场。",
+    "fixture": "失忆、蝶翼碎裂、水下救援、真假恋人、红线束缚、梦境拒吻与主动选择组成递进。",
+    "expected_invariants": ["母题和情感选择贯穿", "转场由动作形状声音或因果驱动", "每段有升级", "光线服务世界状态", "人物状态跨段连续"],
+    "forbidden": ["只堆特效蒙太奇", "转场没有前后匹配点", "女频等同柔光慢镜头"]
+  },
+  {
+    "id": "h3-first-person-public-service",
+    "title": "H3第一人称公益故事",
+    "route": ["haohui-director", "haohui-production-bible", "minimax-h3-storyboard"],
+    "request": "把第一人称寻亲故事开头压缩为15秒，用MiniMax H3输出。",
+    "fixture": "成年孩子回家第一晚，看见母亲关掉亮了二十四年的门灯；旁白保持第一人称。",
+    "expected_invariants": ["只使用H3导演版或Ref2VA四字段之一", "核心物件是门灯", "旁白身份清楚", "15秒内完成动作和认知钩子", "表演行为化"],
+    "forbidden": ["混入即梦字段", "擅称真实新闻", "把母亲关灯改成维修灯泡"]
+  }
+]

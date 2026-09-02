@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉AI短剧制片统筹"
+  short_description: "统筹剧本、导演、资产、平台分镜、审片与声音模块"
+  default_prompt: "使用 $haohui-production-orchestrator 判断当前制作阶段，调用最少且正确的中文AI短剧Skill，并给出可继续生产的交接结果。"
+policy:
+  allow_implicit_invocation: true

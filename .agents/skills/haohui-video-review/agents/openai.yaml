@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉成片审片"
+  short_description: "审查AI视频并输出带时间码的最小重生成补丁"
+  default_prompt: "使用 $haohui-video-review 检查这段AI视频，对照剧本、分镜和参考素材定位问题，冻结成功项，只给需要重跑部分的最小修复卡。"
+policy:
+  allow_implicit_invocation: true
