@@ -66,16 +66,18 @@ Derive the transition as:
 
 `trigger → appraisal → immediate objective → tactic/social mask → action + expression + micro-expression + voice → residual state`
 
-Keep appraisal and objective in director reasoning; put only visible or audible evidence into the production payload. Prefer sequential leakage: eyes react before the head, breath changes before speech, and a hand may betray what the face tries to hide. Background characters receive restrained two-layer reactions and must not steal focus.
+Define the objective as a playable verb aimed at a specific partner, then identify the obstacle, cost of failure and current tactic. Change tactic only when new information, resistance or power changes the beat. Keep appraisal and objective in director reasoning; put only visible or audible evidence into the production payload. Prefer sequential leakage: eyes react before the head, breath changes before speech, and a hand may betray what the face tries to hide. Give dialogue characters a scene-valid physical task when it creates truthful behavior; stopping that task may punctuate a decisive line. Background reactions travel in a restrained, staggered wave and must not steal focus.
 
 ## Action physics
 
-For forceful action, use `preparation → contact/impact → aftereffect` and state:
+For forceful action, use `intent → preparation → attack line → defensive choice → contact/impact → aftereffect` and state:
 
 - weight and balance;
 - contact point and resistance;
 - effect on body, prop or environment;
 - recoverable end pose and new traces.
+
+The defender must perceive or fail to perceive a readable cue, choose evade/block/parry/absorb/counter, and end in a state caused by the actual contact. A weapon or prop interaction must name initial grip or support, force direction, material response and finished state. Reserve time for the result to settle before the cut; otherwise open the following shot with that result already true.
 
 For delicate action, keep continuous small movements and explicit hand-object contact. Do not overload one generation clip with multiple unrelated action objectives.
 
@@ -83,9 +85,9 @@ For delicate action, keep continuous small movements and explicit hand-object co
 
 Encode light as:
 
-`source + screen position/height + direction + softness + color + subject effect + background relationship`
+`source + screen position/height + direction + camera side relative to source + softness + color + exposure priority + subject effect + background relationship`
 
-Keep source side, shadow direction and exposure stable across reverse angles. Change light only through an on-screen source event, time shift or motivated movement.
+Keep source side, shadow direction and exposure priority stable across reverse angles. State what must remain readable and which highlights or shadows may clip only when the dramatic design requires it. Change light only through an on-screen source event, time shift or motivated movement.
 
 Build sound from:
 

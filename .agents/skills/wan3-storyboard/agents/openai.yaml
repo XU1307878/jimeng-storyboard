@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wan 3.0分镜导演"
+  short_description: "用真实@素材、时间轴、表演和光线锚点编译Wan 3.0视频提示词"
+  default_prompt: "Use $wan3-storyboard to compile my approved director plan and actual uploaded assets into a copy-ready Wan 3.0 video prompt."

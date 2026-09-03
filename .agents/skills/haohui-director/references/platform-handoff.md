@@ -20,6 +20,15 @@ Activate when the user says JiMeng, 即梦, Seedance or invokes `$jimeng-storybo
 - Use explicit `@图片/@视频/@音频` roles only for assets the user actually supplied or numbered.
 - Let the JiMeng skill control payload density, first/last-frame locks and validation.
 
+## Wan 3.0
+
+Activate only when the user explicitly says `Wan 3.0`, `Wan3` or invokes `$wan3-storyboard`.
+
+- Hand the approved director plan to `$wan3-storyboard`.
+- Use `@ImageN/@VideoN/@AudioN` only for files the user actually uploaded and numbered in the current production input. Planned or missing assets remain `待上传` and cannot be presented as active locks.
+- Keep character, scene, prop, first-frame, motion and audio references as separate responsibilities. A prop containing exact text needs its own reference and an explicit text-preservation risk note.
+- Let the Wan adapter determine the current interface syntax and duration handling; do not import JiMeng clip rules or H3 field contracts.
+
 ## Other or unspecified platform
 
 - Do not pretend the imported modules define official limits or syntax for Kling, Runway, Veo or another model.

@@ -26,7 +26,7 @@ description: 为AI短剧建立轻量文字生产台账，统一角色、场景�
 3. 区分“设计参考、身份参考、场景参考、道具参考、首帧、尾帧、调度图、动作或运镜参考”，每项只设一个主要用途。
 4. 对高风险场景建立文字空间包、侧别锁、调度点位或首帧需求卡。
 5. 检查同一道具是否被场景图与独立道具图重复生成，必要时启用单实例锁。
-6. 输出交给 `$haohui-director`、`$jimeng-storyboard` 或 `$minimax-h3-storyboard` 的精简交接包，不夹带目标模型之外的语法。
+6. 输出交给 `$haohui-director`、`$jimeng-storyboard`、`$minimax-h3-storyboard` 或 `$wan3-storyboard` 的精简交接包，不夹带目标模型之外的语法。
 
 ## 默认输出
 
