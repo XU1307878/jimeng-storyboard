@@ -116,8 +116,8 @@ def check_h3_isolation(failures: list[str]) -> None:
 
 def check_eval_cases(failures: list[str]) -> None:
     data = json.loads(CASES.read_text(encoding="utf-8"))
-    if len(data) != 9:
-        fail(f"expected 9 eval cases, found {len(data)}", failures)
+    if len(data) != 10:
+        fail(f"expected 10 eval cases, found {len(data)}", failures)
     ids: set[str] = set()
     for case in data:
         required = {"id", "title", "route", "request", "fixture", "expected_invariants", "forbidden"}
@@ -142,6 +142,7 @@ def check_method_integration(failures: list[str]) -> None:
         SKILLS / "haohui-director" / "references" / "camera-action-physics.md": ("攻击线路", "复杂道具动作按五段描述"),
         SKILLS / "jimeng-storyboard" / "references" / "cinematic-lighting-grammar.md": ("曝光优先对象", "摄影机位于光源哪一侧"),
         SKILLS / "haohui-production-bible" / "references" / "asset-system.md": ("局部修改一次只改一个主要变量", "平台独立参数"),
+        SKILLS / "haohui-production-orchestrator" / "references" / "production-truth-and-takes.md": ("候选片段", "实际镜尾优先", "连续两次同层失败"),
         SKILLS / "haohui-video-review" / "references" / "review-rubric.md": ("防守无察觉线索", "群体同步反应"),
         SKILLS / "wan3-storyboard" / "SKILL.md": ("实际素材门", "光线锚点"),
         SKILLS / "wan3-storyboard" / "references" / "wan3-production-contract.md": ("不判定模型忽略参考", "逐字准确"),
@@ -168,7 +169,7 @@ def main() -> int:
         for item in failures:
             print(f"- {item}")
         return 1
-    print("PASS: skill discovery, references, JiMeng mirror, H3 isolation, 9 eval cases, and method integration")
+    print("PASS: skill discovery, references, JiMeng mirror, H3 isolation, 10 eval cases, and method integration")
     return 0
 
 

@@ -47,5 +47,6 @@ Pass only the information the selected adapter needs:
 6. action, expression, micro-expression and voice transition;
 7. prop contact, light source and sound continuity;
 8. first state, end state and likely generation failures.
+9. endpoint purpose (`无缝续拍／下一镜切换／过桥／尾部修复／重新定场`)；已有用户选中片段时，传递其带证据来源的实际镜尾，不再用计划镜尾覆盖。
 
 Do not pass source-library boilerplate, private-configuration notices, generic 8K suffixes, fixed camera brands or unrelated genre formulas.

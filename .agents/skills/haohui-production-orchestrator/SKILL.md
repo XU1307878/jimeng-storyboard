@@ -19,15 +19,16 @@ description: 统筹中文AI短剧从剧本输入、会诊、台词、导演研�
 
 1. 阅读 [references/routing-and-gates.md](references/routing-and-gates.md)。
 2. 多镜、多集或反复重跑时，再阅读 [references/handoff-contract.md](references/handoff-contract.md)。
+3. 已经产生候选成片、需要续镜、跨平台接力或反复修复时，再阅读 [references/production-truth-and-takes.md](references/production-truth-and-takes.md)。
 
 ## 执行流程
 
 1. 建立任务事实：剧本范围、画面形式、画幅、目标平台、用户素材、交付范围和禁止项。
 2. 判断当前阶段和阻塞信息。只有缺失信息会实质改变结果时才向用户确认。
 3. 按路由表调用一个主Skill；只有存在明确独立问题时才增加辅助Skill。
-4. 每一阶段只输出下游需要的交接包，不复制上游所有分析。
+4. 每一阶段只输出下游需要的交接包，不复制上游所有分析。项目事实只维护一个权威台账；平台适配器只读取和序列化，不另建互相竞争的事实版本。
 5. 生成前必须完成剧本事实、资产状态和高风险空间确认；不确定站位不得伪装成最终锁定。
-6. 生成后由 `$haohui-video-review` 取证；失败项交回对应平台Skill做最小修复。
+6. 生成后由 `$haohui-video-review` 取证；只有用户明确选中或接受的候选片段才进入成片正史。其实际可见镜尾替代原计划镜尾，供下一镜承接；失败项交回对应平台Skill做最小修复。
 7. 只有用户需要声音方案时调用 `$haohui-sound-director`。后期剪辑当前不在流程内。
 8. 报告已完成、待确认、待生成、待审片和可交付状态。
 
