@@ -22,7 +22,8 @@ Use the imported 24-module library as a selective directing reference, not as 24
 9. Read only the selected genre reference:
    - [references/genre-realistic-drama.md](references/genre-realistic-drama.md) for romance, workplace, life, rebirth, revenge, melodrama, family power, science fiction or suspense.
    - [references/genre-animation-spectacle.md](references/genre-animation-spectacle.md) for xianxia combat, poetic ink CG, grounded wuxia, 3D comedy, mythic epic, medieval underworld fantasy or black-gold CG.
-10. Read [references/platform-handoff.md](references/platform-handoff.md) only when the user requests production prompts or names a video model.
+10. For dynamic ink-wash combat, black-white-vermilion martial animation, ink-particle spells or brushstroke speed-action, apply `$haohui-dynamic-ink-combat`. Do not route these requests to poetic 3D ink CG merely because both contain “水墨”.
+11. Read [references/platform-handoff.md](references/platform-handoff.md) only when the user requests production prompts or names a video model.
 
 ## Non-negotiable boundaries
 

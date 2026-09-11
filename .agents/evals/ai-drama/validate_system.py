@@ -13,6 +13,7 @@ CASES = Path(__file__).with_name("cases.json")
 REQUIRED_SKILLS = {
     "haohui-dialogue-doctor",
     "haohui-director",
+    "haohui-dynamic-ink-combat",
     "haohui-production-bible",
     "haohui-production-orchestrator",
     "haohui-script-doctor",
@@ -116,8 +117,8 @@ def check_h3_isolation(failures: list[str]) -> None:
 
 def check_eval_cases(failures: list[str]) -> None:
     data = json.loads(CASES.read_text(encoding="utf-8"))
-    if len(data) != 10:
-        fail(f"expected 10 eval cases, found {len(data)}", failures)
+    if len(data) != 11:
+        fail(f"expected 11 eval cases, found {len(data)}", failures)
     ids: set[str] = set()
     for case in data:
         required = {"id", "title", "route", "request", "fixture", "expected_invariants", "forbidden"}
@@ -140,6 +141,8 @@ def check_method_integration(failures: list[str]) -> None:
         SKILLS / "haohui-director" / "SKILL.md": ("performance-objective-beats.md", "playable objective"),
         SKILLS / "haohui-director" / "references" / "performance-objective-beats.md": ("策略失败后才换挡", "群体反应按信息传播错峰发生"),
         SKILLS / "haohui-director" / "references" / "camera-action-physics.md": ("攻击线路", "复杂道具动作按五段描述"),
+        SKILLS / "haohui-dynamic-ink-combat" / "SKILL.md": ("动作优先与复杂度预算", "3组完整攻防"),
+        SKILLS / "haohui-dynamic-ink-combat" / "references" / "dynamic-ink-language.md": ("动作块编译法", "删除全部特效描述后"),
         SKILLS / "jimeng-storyboard" / "references" / "cinematic-lighting-grammar.md": ("曝光优先对象", "摄影机位于光源哪一侧"),
         SKILLS / "haohui-production-bible" / "references" / "asset-system.md": ("局部修改一次只改一个主要变量", "平台独立参数"),
         SKILLS / "haohui-production-orchestrator" / "references" / "production-truth-and-takes.md": ("候选片段", "实际镜尾优先", "连续两次同层失败"),
@@ -169,7 +172,7 @@ def main() -> int:
         for item in failures:
             print(f"- {item}")
         return 1
-    print("PASS: skill discovery, references, JiMeng mirror, H3 isolation, 10 eval cases, and method integration")
+    print("PASS: skill discovery, references, JiMeng mirror, H3 isolation, 11 eval cases, and method integration")
     return 0
 
 

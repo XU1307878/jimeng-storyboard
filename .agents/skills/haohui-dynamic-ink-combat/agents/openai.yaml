@@ -1,0 +1,6 @@
+interface:
+  display_name: "浩辉动态泼墨高燃打斗"
+  short_description: "创作高速攻防、粒子法术与动态水墨介质融合的武侠动画"
+  default_prompt: "使用 $haohui-dynamic-ink-combat 把这段打斗设计成动态泼墨高燃视频。"
+policy:
+  allow_implicit_invocation: true
